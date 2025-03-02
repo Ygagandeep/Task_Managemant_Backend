@@ -110,4 +110,19 @@ Solution: Configured Spring Security to allow role-based access control (RBAC).
 3️⃣ Password Encryption
 
 Issue: Storing plain-text passwords posed a security risk.
-Solution: Used BCryptPasswordEncoder to hash passwords before saving them in the database
+Solution: Used BCryptPasswordEncoder to hash passwords before saving them in the database.
+
+📂 Project Structure
+
+Task_SpringBoot/
+│── src/main/java/com/taskManagement/
+│   ├── config/          # Security configurations
+│   ├── controllers/     # REST API controllers
+│   ├── models/          # Entity classes
+│   ├── repositories/    # Data access layer
+│   ├── services/        # Business logic layer
+│   └── utils/           # Utility classes (JWT, etc.)
+│── src/main/resources/
+│   ├── application.properties  # Configuration file
+│── pom.xml          # Maven dependencies
+│── README.md        # Project documentation
